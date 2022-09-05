@@ -119,9 +119,16 @@ Use the addReview function below to do the following:
 */
 
 
-function addReview(/*Your Code Here */){
-  /*Your Code Here */
+function addReview(array, addName, addRating, addFeedback){
+  let newReview = {};
+  newReview.name = addName;
+  newReview.rating = addRating;
+  newReview.feedback = addFeedback;
+  array.push(newReview);
+  return array;
 }
+addReview(reviews, 'Billy', 2, 'Lame food!');
+
 
 
 

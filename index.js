@@ -187,9 +187,17 @@ Use the getReviewsByRating function below to do the following:
   ]
 */
 
- function getReviewByRating(/* code here */) {
-    /* code here */
+function getReviewByRating(array, ratingFilter) {
+  const filteredReviews = [];
+  for(let i = 0; i < array.length; i++) {
+    if(Math.floor(array[i].rating) === ratingFilter) {
+      filteredReviews.push(array[i]);
+    }
   }
+return filteredReviews;
+}
+getReviewByRating(reviews,4);
+
 
   
 /* 💪💪💪💪💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪💪💪💪💪   

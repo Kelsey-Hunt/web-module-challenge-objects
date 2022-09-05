@@ -39,9 +39,9 @@ Test your createMenuItems function by doing the following:
   
   For example: createMenuItem("pizza",5,"lunch") would return this as the object: {name:"Pizza",price:5,category:"lunch"}
 */
-console.log(createMenuItem('Pizza', 5, 'lunch'));
-console.log(createMenuItem('Spaghetti', 10, "lunch"));
-console.log(createMenuItem('Pancakes', 7, 'breakfast'));
+createMenuItem('Pizza', 5, 'lunch');
+createMenuItem('Spaghetti', 10, "lunch");
+createMenuItem('Pancakes', 7, 'breakfast');
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -95,6 +95,7 @@ Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
 
+console.log(reviews[5].feedback);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 (not auto-tested): 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 

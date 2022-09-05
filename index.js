@@ -59,10 +59,22 @@ Using the burger object below do the following:
 
 const burger = {
   name: "Burger", 
-  price: 18, 
-  category: "Lunch", 
-  
+  price: 18,
+  category: "Lunch",
+
+
+  discount: function(customerType) {
+    if (customerType === 'teacher'){
+       return burger.price = 13.5;
+    } else if (customerType === 'student') {
+       return burger.price = 13.5;
+    } else if (customerType === 'public') {
+      return burger.price = 16.2;
+    }
+  }
 }
+
+
 
 
 
